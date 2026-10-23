@@ -1,0 +1,8 @@
+[Unit]
+Description=Disk syncer
+After=local-fs.target
+Before=umount.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/sync
